@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .black-section {
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+        }
+        .black-section a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+            margin: 10px;
+        }
+        .black-section a:last-child {
+            text-decoration: underline;
+        }
+        .gray-section {
+            background-color: gray;
+            padding: 20px;
+            text-align: center;
+        }
+        .gray-section p {
+            font-weight: bold;
+            color: black;
+            margin-bottom: 10px;
+        }
+        .gray-section a {
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+            margin: 10px;
+        }
+        .gray-section a:hover {
+            color: red;
+        }
+        .gray-section a:visited {
+            color: green;
+        }
+        .gray-section a:visited:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="black-section">
+        <a href="#">Link with white and bold for all states</a>
+        <a href="#">Link with white and bold for all states</a>
+        <a href="#">Link with white and bold for all states</a>
+        <a href="#">no underline</a>
+    </div>
+    <div class="gray-section">
+        <p>Black Link and bold for default state</p>
+        <a href="#">Red when hover</a>
+        <a href="#">Green Visited</a>
+        <a href="#">Red when visited</a>
+    </div>
+</body>
+</html>
